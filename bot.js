@@ -1,10 +1,13 @@
+import { config } from "dotenv"
 import TelegramBot from 'node-telegram-bot-api';
 import { exec } from 'child_process';
-import { TOKEN } from './TOKEN.js';
 import { checkAuth } from './authLog.js';
 import { readFile } from 'fs/promises';
 
-const bot = new TelegramBot(TOKEN, { polling: true });~
+config()
+
+
+const bot = new TelegramBot(process.env.TOKEN, { polling: true });
 
 
 // Command to execute shell scripts
