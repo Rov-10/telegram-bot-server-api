@@ -1,5 +1,8 @@
 export const COMMANDS = {
-    exec: /\/exec (.+)/,
-    chackNg: /\/checkNg/,
+    exec: /\/exec /,
+    checkng: /\/checkng/,
+    checkserver: /\/checkserver/,
+    startserver: /\/startserver/,
     message: "message",
+
 };

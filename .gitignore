@@ -9,3 +9,5 @@ dist
 NgrokTCPLink.txt
 
 unauthorized_access.log
+
+authData.json

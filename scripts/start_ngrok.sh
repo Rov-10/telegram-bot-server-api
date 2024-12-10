@@ -1,0 +1,1 @@
+exec ngrok tcp 25565

@@ -18,7 +18,9 @@ const logData = async (bot, user, chatId) => {
         console.error('Failed to write to log file:', err);
     }
 
-    await bot.sendMessage(chatId, 'You are not authorized to use this bot.');
+    // await bot.sendMessage(chatId, 'You are not authorized to use this bot.');
+
+    
 }
 
 export { logData }
