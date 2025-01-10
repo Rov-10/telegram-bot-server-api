@@ -2,7 +2,7 @@
 
 # Function to check if ngrok is running
 check_ngrok_running() {
-    file="../NgrokTCPLink.txt"
+    file="$HOME/minecraft-server/telegram-bot-server-api/NgrokTCPLink.txt"
     ngrok_processes=$(pgrep -x ngrok)
     if [ -z "$ngrok_processes" ]; then
         echo "Ngrok is not running." > "$file"
